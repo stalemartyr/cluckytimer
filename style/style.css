@@ -1,0 +1,167 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+	*/
+
+	html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, canvas, details, embed, 
+	figure, figcaption, footer, header, hgroup, 
+	menu, nav, output, ruby, section, summary,
+	time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}
+	/* HTML5 display-role reset for older browsers */
+	article, aside, details, figcaption, figure, 
+	footer, header, hgroup, menu, nav, section {
+		display: block;
+	}
+	body {
+		line-height: 1;
+	}
+	ol, ul {
+		list-style: none;
+	}
+	blockquote, q {
+		quotes: none;
+	}
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none;
+	}
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+			
+/*****************************/
+#timer{
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+}
+
+.title{
+	color:#FFF;
+	font-size:12px !important;
+	font-family:arial;
+}
+
+#clock-bg{
+	width:100%;
+}
+
+#ms{
+	width:20px;
+	height:15px;
+	border:solid #FFF 1px;
+	box-shadow:0px 1px 1px #000;
+	border-radius:3px;
+	color:#FFF;
+	background:#525252;
+	display:inline-block;
+}
+
+#stop,#resume,#log{
+	/*display:none;*/
+	display:none;
+}
+
+#buttons{
+	position:fixed;
+	bottom:0px;
+	left:0px;
+	width:100%;
+}
+
+#start:active,#stop:active,#resume:active,#reset:active,#log:active{
+	background: linear-gradient(to bottom, #a9e4f7 0%,#0fb4e7 100%);
+}
+
+#start,#stop,#resume,#reset,#log{
+	text-align:center;
+	padding:10px 5px;
+	font-size:20px;
+	font-family:arial;
+	background: linear-gradient(to bottom, #ffa84c 0%,#ff7b0d 100%);
+}
+
+.per-wrap{
+	display:inline-block;
+	box-shadow:0px 2px 5px #000;
+	border-radius:10px;
+}
+
+.time{
+	display:inline-block;
+	color:#FFF;
+	font-family:arial;
+	font-weight:bold;
+	font-size:60px;
+	height:60px;
+	min-height:60px;
+	max-height:60px;
+}
+
+.toot{
+	font-size:40px;
+	text-shadow:0px 2px 2px #424242;
+}
+
+#timer-wrapper{
+	text-align:center;
+	margin-top:10px;
+}
+
+.per-wrap{
+	background:#424242;
+	padding:5px;
+	border:solid #FFF 3px;
+}
+
+.logs{
+	background: linear-gradient(to bottom, #DBDBDB 0%,#B5B5B5 100%);
+	border:solid gray 1 px;
+	padding:5px 20px;
+	font-weight:bold;
+	font-size:30px;
+	text-align:center;
+	font-family:arial;
+	color:#424242;
+	text-shadow:0px 2px 2px gray;
+}
+
+#logger{
+	overflow:auto;
+}
+
+.up{
+	height:0px;
+	width:0px;
+	border-bottom:solid #0099CC 20px;
+	border-left:solid transparent 20px;
+	border-right:solid transparent 20px;
+	margin-bottom:5px;
+}
+.down{
+	height:0px;
+	width:0px;
+	border-top:solid #0099CC 20px;
+	border-left:solid transparent 20px;
+	border-right:solid transparent 20px;
+}
